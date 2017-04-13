@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C9F209E21E9C91F80083137E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F209E11E9C91F80083137E /* main.cpp */; };
+		C9F209EA1E9C920F0083137E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F209E91E9C920F0083137E /* OpenGL.framework */; };
+		C9F209EC1E9C922F0083137E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F209EB1E9C922F0083137E /* libglfw.3.3.dylib */; };
+		C9F209EE1E9C92560083137E /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F209ED1E9C92560083137E /* libGLEW.2.0.0.dylib */; };
+		C9F209F01E9C92AB0083137E /* libSOIL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F209EF1E9C92AB0083137E /* libSOIL.dylib */; };
+		C9F209F31E9D33800083137E /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F209F11E9D33800083137E /* Game.cpp */; };
+		C9F209F61E9EF3840083137E /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F209F41E9EF3840083137E /* Shader.cpp */; };
+		C9F209FA1E9EF6470083137E /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F209F81E9EF6470083137E /* Texture.cpp */; };
+		C9F209FD1E9EF70F0083137E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9F209FB1E9EF70F0083137E /* ResourceManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,18 @@
 /* Begin PBXFileReference section */
 		C9F209DE1E9C91F80083137E /* Breakout */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Breakout; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F209E11E9C91F80083137E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C9F209E91E9C920F0083137E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C9F209EB1E9C922F0083137E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		C9F209ED1E9C92560083137E /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		C9F209EF1E9C92AB0083137E /* libSOIL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSOIL.dylib; path = ../../../../usr/local/lib/libSOIL.dylib; sourceTree = "<group>"; };
+		C9F209F11E9D33800083137E /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		C9F209F21E9D33800083137E /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		C9F209F41E9EF3840083137E /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		C9F209F51E9EF3840083137E /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		C9F209F81E9EF6470083137E /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		C9F209F91E9EF6470083137E /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		C9F209FB1E9EF70F0083137E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		C9F209FC1E9EF70F0083137E /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F209F01E9C92AB0083137E /* libSOIL.dylib in Frameworks */,
+				C9F209EE1E9C92560083137E /* libGLEW.2.0.0.dylib in Frameworks */,
+				C9F209EC1E9C922F0083137E /* libglfw.3.3.dylib in Frameworks */,
+				C9F209EA1E9C920F0083137E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +67,7 @@
 			children = (
 				C9F209E01E9C91F80083137E /* Breakout */,
 				C9F209DF1E9C91F80083137E /* Products */,
+				C9F209E81E9C920F0083137E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +82,36 @@
 		C9F209E01E9C91F80083137E /* Breakout */ = {
 			isa = PBXGroup;
 			children = (
+				C9F209F71E9EF6340083137E /* Utility */,
 				C9F209E11E9C91F80083137E /* main.cpp */,
+				C9F209F11E9D33800083137E /* Game.cpp */,
+				C9F209F21E9D33800083137E /* Game.hpp */,
 			);
 			path = Breakout;
+			sourceTree = "<group>";
+		};
+		C9F209E81E9C920F0083137E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F209EF1E9C92AB0083137E /* libSOIL.dylib */,
+				C9F209ED1E9C92560083137E /* libGLEW.2.0.0.dylib */,
+				C9F209EB1E9C922F0083137E /* libglfw.3.3.dylib */,
+				C9F209E91E9C920F0083137E /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9F209F71E9EF6340083137E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C9F209F41E9EF3840083137E /* Shader.cpp */,
+				C9F209F51E9EF3840083137E /* Shader.hpp */,
+				C9F209F81E9EF6470083137E /* Texture.cpp */,
+				C9F209F91E9EF6470083137E /* Texture.hpp */,
+				C9F209FB1E9EF70F0083137E /* ResourceManager.cpp */,
+				C9F209FC1E9EF70F0083137E /* ResourceManager.hpp */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F209FD1E9EF70F0083137E /* ResourceManager.cpp in Sources */,
 				C9F209E21E9C91F80083137E /* main.cpp in Sources */,
+				C9F209FA1E9EF6470083137E /* Texture.cpp in Sources */,
+				C9F209F61E9EF3840083137E /* Shader.cpp in Sources */,
+				C9F209F31E9D33800083137E /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +275,14 @@
 		C9F209E61E9C91F80083137E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				DEVELOPMENT_TEAM = VQXELCH5FM;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar,
+					/usr/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -227,7 +290,14 @@
 		C9F209E71E9C91F80083137E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				DEVELOPMENT_TEAM = VQXELCH5FM;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar,
+					/usr/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -251,6 +321,7 @@
 				C9F209E71E9C91F80083137E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
